@@ -16,6 +16,7 @@ const RouteConfig = () => {
                     <Route path="/about" component={About} />
                     <Route path="/product" component={Product} />
                     <Route path="/product/:id" component={ProductItem} />
+                    <Route path="*" component={()=><h2>404 Not Found</h2>} />
                 </Switch>
             </Router>
         </div>
