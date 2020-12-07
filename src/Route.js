@@ -12,7 +12,10 @@ const RouteConfig = () => {
         <div>
             <Router>
                 <Switch>
-                    <Route path="/" component={} />
+                    <Route path="/" component={Home} />
+                    <Route path="/about" component={About} />
+                    <Route path="/product" component={Product} />
+                    <Route path="/product/:id" component={ProductItem} />
                 </Switch>
             </Router>
         </div>
