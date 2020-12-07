@@ -12,7 +12,7 @@ const RouteConfig = () => {
         <div>
             <Router>
                 <Switch>
-                    <Route path="/" component={Home} />
+                    <Route exact path="/" component={Home} />
                     <Route path="/about" component={About} />
                     <Route path="/product" component={Product} />
                     <Route path="/product/:id" component={ProductItem} />
