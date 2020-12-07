@@ -1,9 +1,15 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 const RouteConfig = () => {
     return (
-        <div></div>
+        <div>
+            <Router>
+                <Switch>
+                    <Route path="/" component={ } />
+                </Switch>
+            </Router>
+        </div>
     );
 }
 
