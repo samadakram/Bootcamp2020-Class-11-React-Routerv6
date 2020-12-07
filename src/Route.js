@@ -4,6 +4,7 @@ import { BrowerRouter as Router, Switch, Route } from 'react-router-dom';
 // Import Components
 import Home from './Components/Home';
 import About from './Components/About';
+import Product from './Components/Product';
 
 const RouteConfig = () => {
     return (
