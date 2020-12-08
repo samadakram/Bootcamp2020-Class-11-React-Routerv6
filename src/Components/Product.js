@@ -9,9 +9,10 @@ const Product = () => {
         <div>
             <h1>Welcome To Product Page</h1>
             {Object.keys(Shoes).map(keyName => {
+                const shoe = Shoes[keyName];
                 return (<div>
-                    <h2 key={keyName}>{Shoes[keyName].name}</h2>
-                    <img src={Shoes[keyName].img} alt="shoes" height={150} />
+                    <h2 key={keyName}>{shoe.name}</h2>
+                    <img src={shoe.img} alt="shoes" height={150} />
                 </div>)
             })}
         </div>
