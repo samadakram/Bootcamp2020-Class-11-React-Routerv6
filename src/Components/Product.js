@@ -1,5 +1,6 @@
 import React from 'react'
 import Shoes from '../../src/shoes.json';
+import '../App.css';
 
 const Product = () => {
 
