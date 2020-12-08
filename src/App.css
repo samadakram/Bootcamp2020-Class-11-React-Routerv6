@@ -1,6 +1,7 @@
 body {
   text-align: center;
 }
+
 .productContainer {
   display: flex;
   flex-wrap: wrap;
@@ -11,4 +12,8 @@ body {
   box-shadow: 0 0 10px #463636;
   margin: 10px;
   text-align: center;
+}
+
+.productContainer > div:hover {
+  background-color: lightgray;
 }
