@@ -10,7 +10,8 @@ const Product = () => {
             <h1>Welcome To Product Page</h1>
             {Object.keys(Shoes).map(keyName => {
                 return (<div>
-                    <h2 key={keyName}>{keyName}</h2>
+                    <h2 key={keyName}>{Shoes[keyName].name}</h2>
+                    <img src={Shoes[keyName].img} alt="shoes" height={150} />
                 </div>)
             })}
         </div>
