@@ -8,6 +8,7 @@ const Product = () => {
     return (
         <div>
             <h1>Welcome To Product Page</h1>
+            <div className="productContainer">
             {Object.keys(Shoes).map(keyName => {
                 const shoe = Shoes[keyName];
                 return (<div>
@@ -15,6 +16,7 @@ const Product = () => {
                     <img src={shoe.img} alt="shoes" height={150} />
                 </div>)
             })}
+            </div>
         </div>
     )
 }
