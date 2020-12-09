@@ -16,7 +16,7 @@ const ProductItem = () => {
             <h1>Welcome To Product Item Page</h1>
             <div className="link" >
                 <h2>{shoe.name}</h2>
-                <img src={shoe.img} alt="shoes" height={150} />
+                <img src={shoe.img} alt="shoes" height={500} />
             </div>
         </div>
     )
