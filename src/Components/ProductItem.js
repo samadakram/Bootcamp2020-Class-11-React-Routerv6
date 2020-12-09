@@ -7,13 +7,17 @@ const ProductItem = () => {
     const { id } = useParams();
     const shoe = Shoes[id];
 
-    if(!shoe) {
+    if (!shoe) {
         return <h2>Product Not Found !</h2>
     }
 
     return (
         <div>
             <h1>Welcome To Product Item Page</h1>
+            <div className="link" >
+                <h2>{shoe.name}</h2>
+                <img src={shoe.img} alt="shoes" height={150} />
+            </div>
         </div>
     )
 }
