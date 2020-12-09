@@ -1,9 +1,12 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
+import Shoes from '../../src/shoes.json';
 
 const ProductItem = () => {
 
     const { id } = useParams();
+    const shoe = Shoes[id];
+
 
     return (
         <div>
