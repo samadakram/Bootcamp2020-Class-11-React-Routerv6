@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Shoes from '../../src/shoes.json';
 import '../App.css';
 
@@ -10,13 +11,13 @@ const Product = () => {
         <div>
             <h1>Welcome To Product Page</h1>
             <div className="productContainer">
-            {Object.keys(Shoes).map(keyName => {
-                const shoe = Shoes[keyName];
-                return (<div>
-                    <h2 key={keyName}>{shoe.name}</h2>
-                    <img src={shoe.img} alt="shoes" height={150} />
-                </div>)
-            })}
+                {Object.keys(Shoes).map(keyName => {
+                    const shoe = Shoes[keyName];
+                    return (<Link className="link">
+                        <h2 key={keyName}>{shoe.name}</h2>
+                        <img src={shoe.img} alt="shoes" height={150} />
+                    </Link>)
+                })}
             </div>
         </div>
     )
