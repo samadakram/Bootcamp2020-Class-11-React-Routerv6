@@ -13,7 +13,7 @@ const Product = () => {
             <div className="productContainer">
                 {Object.keys(Shoes).map(keyName => {
                     const shoe = Shoes[keyName];
-                    return (<Link key={keyName} className="link">
+                    return (<Link key={keyName} className="link" to={`product/${keyName}`} >
                         <h2 key={keyName}>{shoe.name}</h2>
                         <img src={shoe.img} alt="shoes" height={150} />
                     </Link>)
